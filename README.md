@@ -1,5 +1,5 @@
 # Battlezone 98 Redux Font Sheet Generator
-A lightweight tool for modders to create custom `bzone.png` font atlases.
+A lightweight tool for modders to create custom `bzfont.dds` font atlases.
 
 Developed by **GrizzlyOne95**.
 
