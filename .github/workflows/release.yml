@@ -44,11 +44,16 @@ jobs:
         run: |
           python -m PyInstaller --noconsole --onefile --add-data "Orbitron-Bold.ttf${{ matrix.sep }}." --add-data "BZONE.ttf${{ matrix.sep }}." bz_generator.py
 
+      - name: Rename binary
+        shell: bash
+        run: |
+          mv dist/${{ matrix.artifact_name }} dist/${{ matrix.asset_name }}
+
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.asset_name }}
-          path: dist/${{ matrix.artifact_name }}
+          path: dist/${{ matrix.asset_name }}
 
   release:
     name: Create Release
@@ -69,9 +74,9 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            artifacts/bz_generator-windows.exe/bz_generator.exe
-            artifacts/bz_generator-linux/bz_generator
-            artifacts/bz_generator-macos/bz_generator
+            artifacts/bz_generator-windows.exe/bz_generator-windows.exe
+            artifacts/bz_generator-linux/bz_generator-linux
+            artifacts/bz_generator-macos/bz_generator-macos
           draft: false
           prerelease: false
           generate_release_notes: true
