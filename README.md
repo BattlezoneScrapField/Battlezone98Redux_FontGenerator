@@ -7,11 +7,15 @@ Developed by **GrizzlyOne95**.
 
 
 ## Features
+- **Battlezone Aesthetic UI:** New dark mode theme with neon highlights using the `BZONE` font.
+- **Profile System:** Save and load custom font configurations.
+- **Auto-Nudge Presets:** Quick-access buttons for common vertical alignment settings.
 - **Dual Font Support:** Use one font for letters and another for numbers/symbols.
 - **Auto-Alignment:** Automatically sit characters on the correct baseline for the BZ98 engine.
 - **Modern Resolution:** Generates a 1024x1024 RGBA texture from scratch.
 - **Drag-and-Drop Ready:** Outputs as `bzfont.dds` for immediate use in game assets.
-- **Manual Tweak Options** You can adjust font size, horizon/vertical alignment, show the coordinate grid, and force snapping characters to middle or lower bounds. 
+- **Manual Tweak Options:** Adjust font size, horizontal/vertical alignment, show the coordinate grid, and force snapping characters.
+- **Real-time Feedback:** Integrated log box to monitor actions and errors.
 
 ## How to Use
 ### For Users
